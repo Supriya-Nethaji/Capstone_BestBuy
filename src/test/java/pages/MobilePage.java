@@ -46,7 +46,7 @@ public class MobilePage extends ProjectSpecificationMethods
 		GoToCartButton.click();
 		String expected = "Cart - Best Buy";
 		String actual = driver.getTitle();
-		TakeScreenshot("MobileAddedInCart");
+		//TakeScreenshot("MobileAddedInCart");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 		

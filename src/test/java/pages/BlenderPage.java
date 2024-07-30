@@ -43,7 +43,7 @@ public class BlenderPage extends ProjectSpecificationMethods {
 		GoToCartClick.click();
 		String expected = "Cart - Best Buy";
 		String actual = driver.getTitle();
-		TakeScreenshot("BlenderAddedToCart");
+		//TakeScreenshot("BlenderAddedToCart");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 	}

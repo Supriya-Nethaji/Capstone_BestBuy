@@ -57,28 +57,28 @@ public class LoginPage extends ProjectSpecificationMethods{
 		{
 			String expected ="Sorry, something went wrong. Please try again.";
 			String actual= WelcomeUser.getText();
-			TakeScreenshot("ValidLogin");
+			//TakeScreenshot("ValidLogin");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("EmailBlank"))
 		{
 			String expected ="Please enter a valid email address.";
 			String actual= EmailErrorMsg.getText();
-			TakeScreenshot("InValidLogin_EmailBlank");
+			//TakeScreenshot("InValidLogin_EmailBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("PwdBlank"))
 		{
 			String expected ="Please enter your password.";
 			String actual= PwdErrorMsg.getText();
-			TakeScreenshot("InValidLogin_PwdBlank");
+			//TakeScreenshot("InValidLogin_PwdBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("InvalidEmailPwd"))
 		{
 			String expected ="Sorry, something went wrong. Please try again.";
 			String actual= WelcomeUser.getText();
-			TakeScreenshot("InValidLogin");
+			//TakeScreenshot("InValidLogin");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="url" value="https://www.bestbuy.com/"/>
+  <listeners>
+    <listener class-name="utils.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="test.Signup">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="setUp"/>
+          <include name="Account" invocation-numbers="0 5"/>
+        </methods>
+      </class> <!-- test.Signup -->
+      <class name="test.ShopByBrands">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="ShopByBrandsTest"/>
+        </methods>
+      </class> <!-- test.ShopByBrands -->
+      <class name="test.CheckOut">
+        <methods>
+          <include name="CheckOutTest" invocation-numbers="1 3"/>
+          <include name="LaunchBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.CheckOut -->
+      <class name="test.SearchInput">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="AddToCartTest" invocation-numbers="1"/>
+          <include name="setUp"/>
+          <include name="SelectMobileTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- test.SearchInput -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
