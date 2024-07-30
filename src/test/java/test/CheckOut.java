@@ -2,6 +2,7 @@ package test;
 
 import java.io.IOException;
 
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,7 @@ public class CheckOut extends ProjectSpecificationMethods{
 	{
 		sheetnum=4;
 	}
-	
+	ITestResult result;
 	@Test(dataProvider = "Data")
 	public void CheckOutTest(String email, String phone,String type,String cardNum, String exp,String cvvCode,String fname,
 			String lname, String addr, String city,String state, String PostalCode, String testType) throws InterruptedException, IOException

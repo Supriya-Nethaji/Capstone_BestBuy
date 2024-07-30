@@ -5,7 +5,7 @@
 	<listener class-name ="utils.Listener"></listener>
 </listeners>
 <parameter name="url" value="https://www.bestbuy.com/"></parameter>
-<parameter name="browser" value="chrome"></parameter>
+<parameter name="browser" value="Chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
      <!-- <class name="test.Signup"/> -->

@@ -1,7 +1,6 @@
 package utils;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -17,6 +16,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -27,7 +27,7 @@ public class UtilityClass {
 	public int sheetnum;
 	public String Screenshotname;
 	
-	//BrowserLaunch
+	//BrowserLaunch & Headless browser testing
 	public void browserLaunch(String browser, String url) throws Exception
 	{
 		if(browser.equalsIgnoreCase("Chrome"))
@@ -39,6 +39,11 @@ public class UtilityClass {
 		}else if(browser.equalsIgnoreCase("Edge"))
 		{
 			driver = new EdgeDriver();
+		}else if(browser.equalsIgnoreCase("headless"))
+		{
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			driver = new ChromeDriver(options);
 		}else
 		{
 			driver  =  new ChromeDriver();

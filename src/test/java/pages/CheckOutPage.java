@@ -5,10 +5,12 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v125.page.model.Screenshot;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.asserts.SoftAssert;
 
 import base.ProjectSpecificationMethods;
@@ -18,6 +20,8 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 	SoftAssert sassert = new SoftAssert();
 	
+	
+	private String fileName;
 	public CheckOutPage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -48,7 +52,7 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 		{
 			String expected="Request failed because of network connection";
 			String actual = Message.getText();
-			TakeScreenshot("ValidCheckOut");
+			//TakeScreenshot("ValidCheckOut");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();	
 			
@@ -56,7 +60,7 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 		{
 			String expected ="Please enter a valid email address.";
 			String actual = EmailErrorMsg.getText();
-			TakeScreenshot("InvalidEmailCheckout");
+			//TakeScreenshot("InvalidEmailCheckout");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();	
 		}else if(Type.equalsIgnoreCase("InvalidPhone"))
@@ -65,7 +69,7 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 			Thread.sleep(5000);
 			wait.until(ExpectedConditions.visibilityOf(PhoneErrorMsg));
 			String actual = PhoneErrorMsg.getText();
-			TakeScreenshot("InValidPhoneCheckOut");
+			//TakeScreenshot("InValidPhoneCheckOut");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();	
 		}

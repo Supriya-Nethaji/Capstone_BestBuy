@@ -55,7 +55,7 @@ public class SonyPage extends ProjectSpecificationMethods {
 		GoToCartButton.click();
 		String expected = "Cart - Best Buy";
 		String actual = driver.getTitle();
-		TakeScreenshot("CameraAddedInCart");
+		//TakeScreenshot("CameraAddedInCart");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 		return new CartPage(driver);

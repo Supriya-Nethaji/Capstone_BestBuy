@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.CheckOut" class="method navigator-link" hash-for-method="CheckOutTest(,, ,, InvalidData, 4242424242424240, 0723, 0, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mountain Vie...)">CheckOutTest(,, ,, InvalidData, 4242424242424240, 0723, 0, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mountain Vie...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +115,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.CheckOut" class="method navigator-link" hash-for-method="CheckOutTest(,, ,, InvalidData, 4242424242424240, 0723, 0, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mountain Vie...)">CheckOutTest(,, ,, InvalidData, 4242424242424240, 0723, 0, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mountain Vie...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.CheckOut" class="method navigator-link" hash-for-method="CheckOutTest(su&#039;, 9042281169, InvalidEmail, 424242424242, 0730, 323, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mo...)">CheckOutTest(su', 9042281169, InvalidEmail, 424242424242, 0730, 323, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mo...)</a> <!-- method navigator-link -->
@@ -133,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.CheckOut</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,8 +154,41 @@
                   </a> <!-- CheckOutTest(,, ,, InvalidData, 4242424242424240, 0723, 0, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mountain Vie...) -->
                   <span class="method-name">CheckOutTest</span>
                   <span class="parameters">(,,,,InvalidData,4242424242424240,0723,0,Supriya,Nethaji,1600 Amphitheatre Pkwy,Mountain View,CA,94043,InvalidCvv)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;nav aria-label=&quot;Main&quot; class=&quot;hamburger-menu&quot;&gt;...&lt;/nav&gt; is not clickable at point (199, 237). Other element would receive the click: &lt;div id=&quot;survey_window&quot; class=&quot;modal fade modal-open in&quot; role=&quot;dialog&quot; style=&quot;margin-top: 218px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=127.0.6533.73)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a2885039b16e9aad3557b9fe5f0bc6c2, clickElement {id=f.67BCE23EA706181C7542B2CD11B8E66D.d.FD3256A2C06DE9DEB474D965128148A4.e.84}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56534/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a2885039b16e9aad3557b9fe5f0bc6c2)] -&gt; xpath: //nav[@class=&apos;hamburger-menu&apos;]]
+Session ID: a2885039b16e9aad3557b9fe5f0bc6c2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at pages.HomePage.clickBrands(HomePage.java:300)
+	at test.CheckOut.CheckOutTest(CheckOut.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.CheckOut</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="CheckOutTest(su&#039;, 9042281169, InvalidEmail, 424242424242, 0730, 323, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mo...)">
@@ -183,7 +225,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.bestbuy.com/&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.Listener&quot;/&gt;
@@ -234,19 +276,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CheckOutTest')
 data.setCell(0, 2, 'test.CheckOut')
-data.setCell(0, 3, 80929);
+data.setCell(0, 3, 87452);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'CheckOutTest')
 data.setCell(1, 2, 'test.CheckOut')
-data.setCell(1, 3, 75278);
+data.setCell(1, 3, 71558);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'CheckOutTest')
 data.setCell(2, 2, 'test.CheckOut')
-data.setCell(2, 3, 70395);
+data.setCell(2, 3, 68501);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'CheckOutTest')
 data.setCell(3, 2, 'test.CheckOut')
-data.setCell(3, 3, 67423);
+data.setCell(3, 3, 16388);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -283,36 +325,38 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">LaunchBrowser(chrome, https://www.bestbuy.com/)</span>
-                <span class="method-start">1870 ms</span>
+                <span class="method-name">LaunchBrowser(Chrome, https://www.bestbuy.com/)</span>
+                <span class="method-start">2324 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckOutTest(supriyapalani28@gmail.com, 9042281169, Valid, 4242424242424240, 0730, 323, Supriya, Nethaji, 1600 Am...)</span>
-                <span class="method-start">19772 ms</span>
+                <span class="method-start">19554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">LaunchBrowser(chrome, https://www.bestbuy.com/)</span>
-                <span class="method-start">95083 ms</span>
+                <span class="method-name">LaunchBrowser(Chrome, https://www.bestbuy.com/)</span>
+                <span class="method-start">91496 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckOutTest(su', 9042281169, InvalidEmail, 424242424242, 0730, 323, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mo...)</span>
-                <span class="method-start">111557 ms</span>
+                <span class="method-start">107142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">LaunchBrowser(chrome, https://www.bestbuy.com/)</span>
-                <span class="method-start">178987 ms</span>
+                <span class="method-name">LaunchBrowser(Chrome, https://www.bestbuy.com/)</span>
+                <span class="method-start">175951 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">CheckOutTest(,, ,, InvalidData, 4242424242424240, 0723, 0, Supriya, Nethaji, 1600 Amphitheatre Pkwy, Mountain Vie...)</span>
-                <span class="method-start">195114 ms</span>
+                <span class="method-start">193868 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">LaunchBrowser(chrome, https://www.bestbuy.com/)</span>
-                <span class="method-start">265534 ms</span>
+                <span class="method-name">LaunchBrowser(Chrome, https://www.bestbuy.com/)</span>
+                <span class="method-start">211217 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckOutTest(supriyapalani28@gmail.com, 9564556, InvalidPhone, 4242424242424240, 0723, 323, ,, ,, 1600 Amphitheat...)</span>
-                <span class="method-start">283216 ms</span>
+                <span class="method-start">232098 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

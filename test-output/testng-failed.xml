@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="Chrome"/>
   <parameter name="url" value="https://www.bestbuy.com/"/>
   <listeners>
     <listener class-name="utils.Listener"/>
@@ -10,7 +10,7 @@
     <classes>
       <class name="test.CheckOut">
         <methods>
-          <include name="CheckOutTest" invocation-numbers="3"/>
+          <include name="CheckOutTest" invocation-numbers="2"/>
           <include name="LaunchBrowser"/>
           <include name="setUp"/>
         </methods>
