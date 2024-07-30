@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-30T11:32:32 IST" name="Suite" finished-at="2024-07-30T11:38:37 IST" duration-ms="364172">
+    <groups>
+    </groups>
+    <test started-at="2024-07-30T11:32:32 IST" name="Test" finished-at="2024-07-30T11:38:37 IST" duration-ms="364172">
+      <class name="test.CheckOut">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:32:32 IST" name="setUp" finished-at="2024-07-30T11:32:32 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:32:34 IST" name="LaunchBrowser" finished-at="2024-07-30T11:32:52 IST" duration-ms="17902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:32:52 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-07-30T11:34:07 IST" duration-ms="75278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supriyapalani28@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9042281169]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4242424242424240]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0730]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[323]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Supriya]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Nethaji]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1600 Amphitheatre Pkwy]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Mountain View]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[94043]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOutTest -->
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:34:07 IST" name="LaunchBrowser" finished-at="2024-07-30T11:34:24 IST" duration-ms="16474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:34:24 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-07-30T11:35:31 IST" duration-ms="67423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[su']]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9042281169]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[InvalidEmail]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[424242424242]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0730]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[323]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Supriya]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Nethaji]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1600 Amphitheatre Pkwy]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Mountain View]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[94043]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[InvalidCard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOutTest -->
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:35:31 IST" name="LaunchBrowser" finished-at="2024-07-30T11:35:47 IST" duration-ms="16127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:35:47 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-07-30T11:36:58 IST" duration-ms="70395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[,]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[,]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[InvalidData]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4242424242424240]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0723]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Supriya]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Nethaji]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1600 Amphitheatre Pkwy]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Mountain View]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[94043]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[InvalidCvv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOutTest -->
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:36:58 IST" name="LaunchBrowser" finished-at="2024-07-30T11:37:16 IST" duration-ms="17682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.CheckOut@13df2a8c]" started-at="2024-07-30T11:37:16 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-07-30T11:38:36 IST" duration-ms="80929" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[supriyapalani28@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9564556]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[InvalidPhone]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4242424242424240]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0723]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[323]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[,]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[,]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1600 Amphitheatre Pkwy]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Mountain View]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[94043]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[BlankFnameLname]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOutTest -->
+      </class> <!-- test.CheckOut -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
