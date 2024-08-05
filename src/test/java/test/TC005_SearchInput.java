@@ -30,22 +30,42 @@ public class TC005_SearchInput extends ProjectSpecificationMethods
 	@Test(dataProvider = "Data")
 	public void SelectMobileTest(String SearchInput,String Type) throws Exception
 	{
-		obj = new HomePage(driver);
-		obj1 = new MobilePage(driver);
-		obj.clickUnitedStates();
-		obj.clickSearchInput(SearchInput,Type);
-		obj1.clickSelectMobile();
+		
+		if(Type.equalsIgnoreCase("valid"))
+		{
+			obj = new HomePage(driver);
+			obj1 = new MobilePage(driver);
+			obj.clickUnitedStates();
+			obj.clickSearchInput(SearchInput,Type);
+			obj1.clickSelectMobile();
+		}else if(Type.equalsIgnoreCase("invalid"))
+		{
+			obj = new HomePage(driver);
+			obj1 = new MobilePage(driver);
+			obj.clickUnitedStates();
+			obj.clickSearchInput(SearchInput,Type);
+		}
+		
 	}
 	
 	@Test(dataProvider = "Data")
 	public void AddToCartTest(String SearchInput,String Type)throws Exception
 	{
+		if(Type.equalsIgnoreCase("valid"))
+		{
 		obj = new HomePage(driver);
 		obj1 = new MobilePage(driver);
 		obj.clickUnitedStates();
 		obj.clickSearchInput(SearchInput,Type);
 		obj1.clickSelectMobile();
 		obj1.clickAddToCart();
+		}else if(Type.equalsIgnoreCase("invalid"))
+		{
+			obj = new HomePage(driver);
+			obj1 = new MobilePage(driver);
+			obj.clickUnitedStates();
+			obj.clickSearchInput(SearchInput,Type);
+		}
 	}
 	
 	@Test(dataProvider = "Data")

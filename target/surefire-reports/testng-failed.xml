@@ -8,34 +8,36 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="test.Signup">
+      <class name="test.TC006_ShopByDepartment">
         <methods>
           <include name="LaunchBrowser"/>
-          <include name="setUp"/>
-          <include name="Account" invocation-numbers="0 5"/>
+          <include name="closeBrowser"/>
+          <include name="ShopByDepttest"/>
         </methods>
-      </class> <!-- test.Signup -->
-      <class name="test.ShopByBrands">
+      </class> <!-- test.TC006_ShopByDepartment -->
+      <class name="test.TC001_Signup">
         <methods>
           <include name="LaunchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="Account" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.TC001_Signup -->
+      <class name="test.TC007_ShopByBrands">
+        <methods>
+          <include name="LaunchBrowser"/>
+          <include name="closeBrowser"/>
           <include name="ShopByBrandsTest"/>
         </methods>
-      </class> <!-- test.ShopByBrands -->
-      <class name="test.CheckOut">
-        <methods>
-          <include name="CheckOutTest" invocation-numbers="1 3"/>
-          <include name="LaunchBrowser"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- test.CheckOut -->
-      <class name="test.SearchInput">
+      </class> <!-- test.TC007_ShopByBrands -->
+      <class name="test.TC008_CheckOut">
         <methods>
           <include name="LaunchBrowser"/>
-          <include name="AddToCartTest" invocation-numbers="1"/>
           <include name="setUp"/>
-          <include name="SelectMobileTest" invocation-numbers="1"/>
+          <include name="closeBrowser"/>
+          <include name="CheckOutTest" invocation-numbers="1"/>
         </methods>
-      </class> <!-- test.SearchInput -->
+      </class> <!-- test.TC008_CheckOut -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

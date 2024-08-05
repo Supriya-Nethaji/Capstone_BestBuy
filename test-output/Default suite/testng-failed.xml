@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.AllMenu">
+      <class name="test.TC008_CheckOut">
         <methods>
+          <include name="setUp"/>
           <include name="LaunchBrowser"/>
-          <include name="AllMenuValidation"/>
+          <include name="closeBrowser"/>
+          <include name="CheckOutTest"/>
         </methods>
-      </class> <!-- test.AllMenu -->
+      </class> <!-- test.TC008_CheckOut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

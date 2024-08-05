@@ -8,29 +8,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.SearchInput">
-        <methods>
-          <include name="LaunchBrowser"/>
-          <include name="AddToCartTest" invocation-numbers="1"/>
-          <include name="setUp"/>
-          <include name="SelectMobileTest" invocation-numbers="0 1"/>
-          <include name="SearchInputTest" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- test.SearchInput -->
-      <class name="test.Signup">
+      <class name="test.TC008_CheckOut">
         <methods>
           <include name="LaunchBrowser"/>
           <include name="setUp"/>
-          <include name="Account" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="CheckOutTest" invocation-numbers="3"/>
         </methods>
-      </class> <!-- test.Signup -->
-      <class name="test.CheckOut">
-        <methods>
-          <include name="CheckOutTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="LaunchBrowser"/>
-        </methods>
-      </class> <!-- test.CheckOut -->
+      </class> <!-- test.TC008_CheckOut -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

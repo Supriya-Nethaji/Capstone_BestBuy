@@ -1,9 +1,13 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import base.ProjectSpecificationMethods;
@@ -28,7 +32,7 @@ public class CreateAccountPage extends ProjectSpecificationMethods{
 	@FindBy(xpath="//p[text()='Please enter your first name.']") WebElement FNameErrorMsg;
 	@FindBy(xpath="//p[text()='Please enter your last name.']") WebElement LNameErrorMsg;
 	@FindBy(xpath="//p[text()='Please enter a valid email address.']") WebElement EmailErrorMsg;
-	@FindBy(xpath="//span[text()='Hi, Wonder']") WebElement WelcomeUser;
+	@FindBy(xpath="//span[contains(@class,'line-clamp')]") WebElement WelcomeUser;
 	
 	 
 	public CreateAccountPage enterFirstName(String fname)
@@ -79,6 +83,8 @@ public class CreateAccountPage extends ProjectSpecificationMethods{
 		if(Type.equalsIgnoreCase("Valid"))
 		{
 			String expected ="Hi, "+fname+"";
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			wait.until(ExpectedConditions.visibilityOf(WelcomeUser));
 			String actual= WelcomeUser.getText();
 			//TakeScreenshot("ValidCreateAccount");
 			sassert.assertEquals(actual, expected);

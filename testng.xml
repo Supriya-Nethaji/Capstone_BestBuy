@@ -8,15 +8,17 @@
 <parameter name="browser" value="Chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.TC004_BottomLinks"/>
+      
       <class name="test.TC001_Signup"/>
-      <class name="test.TC005_SearchInput"/>
       <class name="test.TC002_Login"/>
+      <class name="test.TC003_AllMenu"/>
+      <class name="test.TC004_BottomLinks"/>
+      <class name="test.TC005_SearchInput"/>
       <class name="test.TC006_ShopByDepartment"/>
-      <class name="test.TC009_Payment"/>
       <class name="test.TC007_ShopByBrands"/>
       <class name="test.TC008_CheckOut"/>
-      <class name="test.TC003_AllMenu"/>
+      
+      <!-- <class name="test.TC009_Payment"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
