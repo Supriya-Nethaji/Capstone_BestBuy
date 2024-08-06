@@ -9,14 +9,17 @@ import base.ProjectSpecificationMethods;
 
 public class CartPage extends ProjectSpecificationMethods {
 	
+	//Constructor
 	public CartPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(xpath="//button[@data-track='Checkout - Top']") WebElement CheckOutButton;
 	
+	//methods
 	public ContinueAsGuestPage clickCheckOutButton()
 	{
 		CheckOutButton.click();

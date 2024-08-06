@@ -20,14 +20,14 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 	SoftAssert sassert = new SoftAssert();
 	
-	
-	private String fileName;
+	//Constructor
 	public CheckOutPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(id="user.emailAddress") WebElement emailField;
 	@FindBy(id="user.phone") WebElement phoneField;
 	@FindBy(id="emailAddress") WebElement EmailErrorMsg;
@@ -35,6 +35,7 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 	@FindBy(xpath="//span[text()='Request failed because of network connection']") WebElement Message;
 	@FindBy(xpath="//span[text()='Continue to Payment Information']") WebElement ContinueToPaymentButton;
 	
+	//Methods
 	public void enterEmailAddress(String email)
 	{
 		emailField.sendKeys(email);
@@ -52,7 +53,6 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 		{
 			String expected="Request failed because of network connection";
 			String actual = Message.getText();
-			//TakeScreenshot("ValidCheckOut");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();	
 			
@@ -60,7 +60,6 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 		{
 			String expected ="Please enter a valid email address.";
 			String actual = EmailErrorMsg.getText();
-			//TakeScreenshot("InvalidEmailCheckout");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();	
 		}else if(Type.equalsIgnoreCase("InvalidPhone"))
@@ -69,7 +68,6 @@ public class CheckOutPage extends ProjectSpecificationMethods {
 			Thread.sleep(5000);
 			wait.until(ExpectedConditions.visibilityOf(PhoneErrorMsg));
 			String actual = PhoneErrorMsg.getText();
-			//TakeScreenshot("InValidPhoneCheckOut");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();	
 		}

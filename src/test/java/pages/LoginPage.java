@@ -15,14 +15,14 @@ import base.ProjectSpecificationMethods;
 
 public class LoginPage extends ProjectSpecificationMethods{
 	
-	
-	
+	//Constructor
 	public LoginPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(id="fld-e")WebElement LoginEmail;
 	@FindBy(id="fld-p1")WebElement LoginPwd;
 	@FindBy(xpath="//button[@data-track='Sign In']") WebElement SignInButton;
@@ -31,6 +31,7 @@ public class LoginPage extends ProjectSpecificationMethods{
 	@FindBy(xpath="//p[text()='Please enter your password.']") WebElement PwdErrorMsg;
 	@FindBy(xpath="//button[text()='Skip for now']") WebElement skipForNow;
 	
+	//Methods
 	public LoginPage enterLoginEmail(String email)
 	{
 		LoginEmail.sendKeys(email);
@@ -57,28 +58,24 @@ public class LoginPage extends ProjectSpecificationMethods{
 		{
 			String expected ="Sorry, something went wrong. Please try again.";
 			String actual= WelcomeUser.getText();
-			//TakeScreenshot("ValidLogin");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("EmailBlank"))
 		{
 			String expected ="Please enter a valid email address.";
 			String actual= EmailErrorMsg.getText();
-			//TakeScreenshot("InValidLogin_EmailBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("PwdBlank"))
 		{
 			String expected ="Please enter your password.";
 			String actual= PwdErrorMsg.getText();
-			//TakeScreenshot("InValidLogin_PwdBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("InvalidEmailPwd"))
 		{
 			String expected ="Sorry, something went wrong. Please try again.";
 			String actual= WelcomeUser.getText();
-			//TakeScreenshot("InValidLogin");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}

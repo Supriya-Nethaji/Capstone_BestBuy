@@ -9,6 +9,7 @@ import utils.UtilityClass;
 
 public class ProjectSpecificationMethods extends UtilityClass {
 	
+	//Browser launch
 	@Parameters({"browser", "url"})
 	@BeforeMethod
 	public void LaunchBrowser(String browser, String url) throws Exception
@@ -16,6 +17,7 @@ public class ProjectSpecificationMethods extends UtilityClass {
 		browserLaunch(browser, url);
 	}
 	
+	//reading data and storing in 2D array
 	@DataProvider(name = "Data")
 	public String[][] getData() throws Exception
 	{
@@ -23,6 +25,8 @@ public class ProjectSpecificationMethods extends UtilityClass {
 		return data;
 	}
 	
+	
+	//close browser instance
 	@AfterMethod
 	public void closeBrowser() throws InterruptedException
 	{

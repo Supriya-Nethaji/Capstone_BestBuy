@@ -12,12 +12,14 @@ public class PaymentDetailsPage extends ProjectSpecificationMethods{
 	
 	SoftAssert sassert = new SoftAssert();
 	
+	//Constructor
 	public PaymentDetailsPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(id="number") WebElement CardNumber;
 	@FindBy(id="expirationDate") WebElement ExpirationDate;
 	@FindBy(id="cvv") WebElement CVV;
@@ -35,6 +37,7 @@ public class PaymentDetailsPage extends ProjectSpecificationMethods{
 	@FindBy(xpath="//p[text()='Please enter a valid card number.']") WebElement CardError;
 	@FindBy(xpath="//p[text()='Please enter a first name.']") WebElement FnameError;
 	
+	//Methods
 	public void enterCardNumber(String cardNum)
 	{
 		CardNumber.sendKeys(cardNum);

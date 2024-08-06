@@ -20,12 +20,14 @@ public class HomePage extends ProjectSpecificationMethods
 	SoftAssert sassert = new SoftAssert();
 	Actions act = new Actions(driver);
 	
+	//Constructor
 	public HomePage(WebDriver driver)
 	{
 		this.driver =  driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(className="us-link") WebElement UnitedStates;
 	@FindBy(xpath="//span[text()='Account']") WebElement AccountLink;
 	@FindBy(xpath="//a[text()='Create Account']") WebElement CreateAccClick;
@@ -59,6 +61,7 @@ public class HomePage extends ProjectSpecificationMethods
 	@FindBy(xpath="//button[text()='Brands']") WebElement Brands;
 	@FindBy(xpath="//a[text()='Sony']") WebElement Sony;
 	
+	//Methods
 	public HomePage clickUnitedStates()
 	{
 		wait.until(ExpectedConditions.visibilityOf(UnitedStates));
@@ -90,7 +93,6 @@ public class HomePage extends ProjectSpecificationMethods
 		TopDealsMenu.click();
 		String expected ="Top Deals and Featured Offers on Electronics - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("TopDeals");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 	}
@@ -100,7 +102,6 @@ public class HomePage extends ProjectSpecificationMethods
 		DealOfTheDay.click();
 		String expected ="Deal of the Day: Electronics Deals - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("DealOfTheDay");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 	}
@@ -110,7 +111,6 @@ public class HomePage extends ProjectSpecificationMethods
 		YesBestBuySellsThat.click();
 		String expected ="Yes, Best Buy Sells That – Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("BestBuySellsThat");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -120,7 +120,6 @@ public class HomePage extends ProjectSpecificationMethods
 		MyBestBuyMemberships.click();
 		String expected ="My Best Buy Memberships";
 		String actual = driver.getTitle();
-		//TakeScreenshot("BBMemberships");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -130,7 +129,6 @@ public class HomePage extends ProjectSpecificationMethods
 		CreditCards.click();
 		String expected ="Best Buy Credit Card: Rewards & Financing";
 		String actual = driver.getTitle();
-		//TakeScreenshot("creditCards");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -141,7 +139,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(BackToSchoolDeals).click().perform();
 		String expected = "Top Deals on Back to School Tech - Student Discounts and Deals - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("BackToSchool");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 	}
@@ -152,7 +149,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(GiftIdeas).click().perform();
 		String expected = "Gift Ideas 2024: Best Gifts to Give This Year - Best Buy";
 		String actual=driver.getTitle();
-		//TakeScreenshot("MoreOptions");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -163,7 +159,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(Accessibility).click().perform();
 		String expected="Accessibility - Best Buy";
 		String actual=driver.getTitle();
-		//TakeScreenshot("Accessibility");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -173,7 +168,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(Terms).click().perform();
 		String expected = "BestBuy.com Terms and Conditions";
 		String actual = driver.getTitle();
-		//TakeScreenshot("terms");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -183,7 +177,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(Privacy).click().perform();
 		String expected = "Privacy Policy Hub - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("privacy");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	;
 	}
@@ -193,7 +186,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(InterestBasedAds).click().perform();
 		String expected = "Interest-Based Ads - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("InterestBasedAds");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();		
 	}
@@ -203,7 +195,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(StatePrivacyRights).click().perform();
 		String expected = "State Privacy Rights - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("StatePrivacy");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();		
 	}
@@ -213,7 +204,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(HealthDataPrivacy).click().perform();
 		String expected = "Health Data Privacy Information - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("HealthData");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();		
 	}
@@ -223,7 +213,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(DoNotSell).click().perform();
 		String expected = "Start Request - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("DoNotSell");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();		
 	}
@@ -233,7 +222,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(LimitUse).click().perform();
 		String expected = "Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("LimitUse");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -243,7 +231,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(TargetAds).click().perform();
 		String expected = "Start Request - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("TargetAds");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -253,7 +240,6 @@ public class HomePage extends ProjectSpecificationMethods
 		act.moveToElement(CaSupplyChain).click().perform();
 		String expected = "California Supply Chain Transparency Act - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("CASupplyChain");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();	
 	}
@@ -267,7 +253,6 @@ public class HomePage extends ProjectSpecificationMethods
 		{
 		String expected = "mobiles - Best Buy";
 		String actual=driver.getTitle();
-		//TakeScreenshot("SearchPage_Mobiles");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 		} else if(Type.equalsIgnoreCase("invalid"))
@@ -275,7 +260,6 @@ public class HomePage extends ProjectSpecificationMethods
 			String expected ="Try a different search term or check out some of our suggestions below.";
 			System.out.println(searchmessage.getText());
 			String actual = searchmessage.getText();
-			//TakeScreenshot("InValidSearchInput");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}

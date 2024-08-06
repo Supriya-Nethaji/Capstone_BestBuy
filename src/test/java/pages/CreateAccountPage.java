@@ -14,12 +14,14 @@ import base.ProjectSpecificationMethods;
 
 public class CreateAccountPage extends ProjectSpecificationMethods{
 	
+	//Constructor
 	public CreateAccountPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 
+	//Element locators
 	@FindBy(id="firstName") WebElement FName;
 	@FindBy(id="lastName") WebElement LName;
 	@FindBy(id="email") WebElement Email;
@@ -34,7 +36,7 @@ public class CreateAccountPage extends ProjectSpecificationMethods{
 	@FindBy(xpath="//p[text()='Please enter a valid email address.']") WebElement EmailErrorMsg;
 	@FindBy(xpath="//span[contains(@class,'line-clamp')]") WebElement WelcomeUser;
 	
-	 
+	 //Methods
 	public CreateAccountPage enterFirstName(String fname)
 	{
 		FName.sendKeys(fname);
@@ -86,42 +88,36 @@ public class CreateAccountPage extends ProjectSpecificationMethods{
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(WelcomeUser));
 			String actual= WelcomeUser.getText();
-			//TakeScreenshot("ValidCreateAccount");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("UserExist"))
 		{
 			String expected="An account with this email already exists.";
 			String actual= SignUpErrorMessage.getText();
-			//TakeScreenshot("InValidCreateAccount_userexist");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("PassDiff"))
 		{
 			String expected="Passwords do not match.";
 			String actual= PwdErrorMsg.getText();
-			//TakeScreenshot("InValidCreateAccount_PassDiff");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("FnameBlank"))
 		{
 			String expected="Please enter your first name.";
 			String actual= FNameErrorMsg.getText();
-			//TakeScreenshot("InValidCreateAccount_FnameBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("LnameBlank"))
 		{
 			String expected="Please enter your last name.";
 			String actual= LNameErrorMsg.getText();
-			//TakeScreenshot("InValidCreateAccount_LnameBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}else if(Type.equalsIgnoreCase("EmailBlank"))
 		{
 			String expected="Please enter a valid email address.";
 			String actual= EmailErrorMsg.getText();
-			//TakeScreenshot("InValidCreateAccount_EmailBlank");
 			sassert.assertEquals(actual, expected);
 			sassert.assertAll();
 		}

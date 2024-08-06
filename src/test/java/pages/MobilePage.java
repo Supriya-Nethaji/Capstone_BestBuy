@@ -14,12 +14,14 @@ public class MobilePage extends ProjectSpecificationMethods
 {
 	SoftAssert sassert= new SoftAssert();
 	
+	//Constructor
 	public MobilePage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(xpath="(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]") WebElement selectMobile;
 	@FindBy(xpath="(//button[@data-button-state='ADD_TO_CART'])[2]") WebElement AddToCart;	
 	@FindBy(xpath="//a[text()='Go to Cart']") WebElement GoToCartButton;
@@ -46,9 +48,7 @@ public class MobilePage extends ProjectSpecificationMethods
 		GoToCartButton.click();
 		String expected = "Cart - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("MobileAddedInCart");
 		sassert.assertEquals(actual, expected);
-		sassert.assertAll();
-		
+		sassert.assertAll();	
 	}
 }

@@ -16,18 +16,21 @@ public class SonyPage extends ProjectSpecificationMethods {
 	public Actions act = new Actions(driver);
 	public SoftAssert sassert = new SoftAssert();
 	
+	//Constructor
 	public SonyPage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Element locators
 	@FindBy(xpath="//a[text()='Cameras']") WebElement SonyCameras;
 	@FindBy(xpath="//a[text()='Mirrorless Cameras']") WebElement MirrorlessCameras;
 	@FindBy(xpath="//a[text()='Sony - Alpha 6100 Mirrorless 4K Video Camera with E PZ 16-50mm Lens - Black']") WebElement chooseCamera;
 	@FindBy(xpath="(//button[@data-button-state='ADD_TO_CART'])[4]") WebElement AddToCartButton;
 	@FindBy(xpath="//a[text()='Go to Cart']") WebElement GoToCartButton;
 	
+	//Methods
 	public SonyPage clickSonyCameras()
 	{
 		SonyCameras.click();
@@ -55,7 +58,6 @@ public class SonyPage extends ProjectSpecificationMethods {
 		GoToCartButton.click();
 		String expected = "Cart - Best Buy";
 		String actual = driver.getTitle();
-		//TakeScreenshot("CameraAddedInCart");
 		sassert.assertEquals(actual, expected);
 		sassert.assertAll();
 		return new CartPage(driver);
