@@ -1,5 +1,7 @@
 # E-Commerce Site Automation project:
 
+<p align="Left"><img src="Images/best-buy-logo.png" alt="screenshot" width="400", height="200"></p>
+
 This project is meant for testing the major functionalities of Best Buy web site. I have used Data-Driven testing for testing Sign In functionality with Data provider. Also, this project covers the main features like Adding item to cart and searching and adding item to cart.
 
 ## Motivation:
