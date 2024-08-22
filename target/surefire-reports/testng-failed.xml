@@ -23,21 +23,16 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- test.TC001_Signup -->
-      <class name="test.TC007_ShopByBrands">
+      <class name="test.TC005_SearchInput">
         <methods>
           <include name="LaunchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="ShopByBrandsTest"/>
-        </methods>
-      </class> <!-- test.TC007_ShopByBrands -->
-      <class name="test.TC008_CheckOut">
-        <methods>
-          <include name="LaunchBrowser"/>
           <include name="setUp"/>
-          <include name="closeBrowser"/>
-          <include name="CheckOutTest" invocation-numbers="1"/>
+          <include name="SelectMobileTest" invocation-numbers="0"/>
+          <include name="GoToCartTest" invocation-numbers="0"/>
+          <include name="AddToCartTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.TC008_CheckOut -->
+      </class> <!-- test.TC005_SearchInput -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

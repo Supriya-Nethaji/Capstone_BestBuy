@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="41" passed="37" failed="4" skipped="0">
+<testng-results ignored="0" total="41" passed="36" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-05T12:44:19 IST" name="Suite" finished-at="2024-08-05T13:19:41 IST" duration-ms="2122159">
+  <suite started-at="2024-08-22T13:17:27 IST" name="Suite" finished-at="2024-08-22T13:50:24 IST" duration-ms="1977304">
     <groups>
     </groups>
-    <test started-at="2024-08-05T12:44:19 IST" name="Test" finished-at="2024-08-05T13:19:41 IST" duration-ms="2122159">
+    <test started-at="2024-08-22T13:17:27 IST" name="Test" finished-at="2024-08-22T13:50:24 IST" duration-ms="1977304">
       <class name="test.TC005_SearchInput">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T12:44:19 IST" name="setUp" finished-at="2024-08-05T12:44:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:17:27 IST" name="setUp" finished-at="2024-08-22T13:17:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:04:55 IST" name="LaunchBrowser" finished-at="2024-08-05T13:05:10 IST" duration-ms="14373" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:35:34 IST" name="LaunchBrowser" finished-at="2024-08-22T13:35:50 IST" duration-ms="15668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="AddToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:05:10 IST" name="AddToCartTest" data-provider="Data" finished-at="2024-08-05T13:05:46 IST" duration-ms="35974" status="PASS">
+        <test-method signature="AddToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:35:50 IST" name="AddToCartTest" data-provider="Data" finished-at="2024-08-22T13:36:31 IST" duration-ms="40580" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,14 +40,88 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]"}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a3e941a721dc10071f197a420cf297e, findElement {value=(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51564}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51564/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a3e941a721dc10071f197a420cf297e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]"}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a3e941a721dc10071f197a420cf297e, findElement {value=(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51564}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51564/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a3e941a721dc10071f197a420cf297e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at pages.MobilePage.clickSelectMobile(MobilePage.java:32)
+at test.TC005_SearchInput.AddToCartTest(TC005_SearchInput.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:05:46 IST" name="closeBrowser" finished-at="2024-08-05T13:05:52 IST" duration-ms="6062" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:36:31 IST" name="closeBrowser" finished-at="2024-08-22T13:36:37 IST" duration-ms="6009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:05:52 IST" name="LaunchBrowser" finished-at="2024-08-05T13:06:07 IST" duration-ms="14804" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:36:37 IST" name="LaunchBrowser" finished-at="2024-08-22T13:36:50 IST" duration-ms="13146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +137,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="AddToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:06:07 IST" name="AddToCartTest" data-provider="Data" finished-at="2024-08-05T13:06:34 IST" duration-ms="26599" status="PASS">
+        <test-method signature="AddToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:36:50 IST" name="AddToCartTest" data-provider="Data" finished-at="2024-08-22T13:37:09 IST" duration-ms="19342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,11 +153,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:06:34 IST" name="closeBrowser" finished-at="2024-08-05T13:06:40 IST" duration-ms="5889" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:37:10 IST" name="closeBrowser" finished-at="2024-08-22T13:37:16 IST" duration-ms="5941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:06:40 IST" name="LaunchBrowser" finished-at="2024-08-05T13:06:53 IST" duration-ms="12336" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:37:16 IST" name="LaunchBrowser" finished-at="2024-08-22T13:37:32 IST" duration-ms="15859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +173,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="GoToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:06:53 IST" name="GoToCartTest" data-provider="Data" finished-at="2024-08-05T13:07:43 IST" duration-ms="50032" status="PASS">
+        <test-method signature="GoToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:37:32 IST" name="GoToCartTest" data-provider="Data" finished-at="2024-08-22T13:38:12 IST" duration-ms="40401" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -112,14 +186,88 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]"}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8de081a37f2019311cf429391826656e, findElement {value=(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51828/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8de081a37f2019311cf429391826656e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]"}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8de081a37f2019311cf429391826656e, findElement {value=(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51828/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8de081a37f2019311cf429391826656e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at pages.MobilePage.clickSelectMobile(MobilePage.java:32)
+at test.TC005_SearchInput.GoToCartTest(TC005_SearchInput.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:07:46 IST" name="closeBrowser" finished-at="2024-08-05T13:07:52 IST" duration-ms="6072" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:38:12 IST" name="closeBrowser" finished-at="2024-08-22T13:38:18 IST" duration-ms="6126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:07:52 IST" name="LaunchBrowser" finished-at="2024-08-05T13:08:05 IST" duration-ms="12988" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:38:18 IST" name="LaunchBrowser" finished-at="2024-08-22T13:38:32 IST" duration-ms="13493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +283,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="GoToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:08:05 IST" name="GoToCartTest" data-provider="Data" finished-at="2024-08-05T13:08:28 IST" duration-ms="22612" status="PASS">
+        <test-method signature="GoToCartTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:38:32 IST" name="GoToCartTest" data-provider="Data" finished-at="2024-08-22T13:38:52 IST" duration-ms="20296" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,11 +299,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:08:28 IST" name="closeBrowser" finished-at="2024-08-05T13:08:34 IST" duration-ms="5879" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:38:52 IST" name="closeBrowser" finished-at="2024-08-22T13:38:58 IST" duration-ms="5920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:08:34 IST" name="LaunchBrowser" finished-at="2024-08-05T13:08:49 IST" duration-ms="14354" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:38:59 IST" name="LaunchBrowser" finished-at="2024-08-22T13:39:13 IST" duration-ms="14630" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -171,7 +319,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="SearchInputTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:08:49 IST" name="SearchInputTest" data-provider="Data" finished-at="2024-08-05T13:09:12 IST" duration-ms="23601" status="PASS">
+        <test-method signature="SearchInputTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:39:13 IST" name="SearchInputTest" data-provider="Data" finished-at="2024-08-22T13:39:33 IST" duration-ms="19839" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -187,11 +335,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchInputTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:09:14 IST" name="closeBrowser" finished-at="2024-08-05T13:09:19 IST" duration-ms="5929" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:39:34 IST" name="closeBrowser" finished-at="2024-08-22T13:39:40 IST" duration-ms="5979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:09:19 IST" name="LaunchBrowser" finished-at="2024-08-05T13:09:32 IST" duration-ms="12642" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:39:40 IST" name="LaunchBrowser" finished-at="2024-08-22T13:39:53 IST" duration-ms="13209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -207,7 +355,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="SearchInputTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:09:32 IST" name="SearchInputTest" data-provider="Data" finished-at="2024-08-05T13:09:53 IST" duration-ms="21160" status="PASS">
+        <test-method signature="SearchInputTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:39:53 IST" name="SearchInputTest" data-provider="Data" finished-at="2024-08-22T13:40:13 IST" duration-ms="20499" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -223,11 +371,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchInputTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:09:54 IST" name="closeBrowser" finished-at="2024-08-05T13:10:00 IST" duration-ms="5935" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:40:14 IST" name="closeBrowser" finished-at="2024-08-22T13:40:20 IST" duration-ms="5977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:10:00 IST" name="LaunchBrowser" finished-at="2024-08-05T13:10:14 IST" duration-ms="14752" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:40:20 IST" name="LaunchBrowser" finished-at="2024-08-22T13:40:34 IST" duration-ms="14548" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -243,7 +391,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="SelectMobileTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:10:14 IST" name="SelectMobileTest" data-provider="Data" finished-at="2024-08-05T13:10:45 IST" duration-ms="30523" status="PASS">
+        <test-method signature="SelectMobileTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:40:34 IST" name="SelectMobileTest" data-provider="Data" finished-at="2024-08-22T13:41:15 IST" duration-ms="40667" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -256,14 +404,88 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]"}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0ab3338b3dc6b4474048c02c0eb5093, findElement {value=(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52365/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0ab3338b3dc6b4474048c02c0eb5093]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1]"}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0ab3338b3dc6b4474048c02c0eb5093, findElement {value=(//a[text()='Boost Mobile - moto g play 2024 64GB Prepaid - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52365}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52365/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0ab3338b3dc6b4474048c02c0eb5093
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at pages.MobilePage.clickSelectMobile(MobilePage.java:32)
+at test.TC005_SearchInput.SelectMobileTest(TC005_SearchInput.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectMobileTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:10:46 IST" name="closeBrowser" finished-at="2024-08-05T13:10:52 IST" duration-ms="6030" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:41:15 IST" name="closeBrowser" finished-at="2024-08-22T13:41:21 IST" duration-ms="6039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:10:52 IST" name="LaunchBrowser" finished-at="2024-08-05T13:11:06 IST" duration-ms="14128" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:41:21 IST" name="LaunchBrowser" finished-at="2024-08-22T13:41:36 IST" duration-ms="14743" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -279,7 +501,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="SelectMobileTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:11:06 IST" name="SelectMobileTest" data-provider="Data" finished-at="2024-08-05T13:11:26 IST" duration-ms="19979" status="PASS">
+        <test-method signature="SelectMobileTest(java.lang.String,java.lang.String)[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:41:36 IST" name="SelectMobileTest" data-provider="Data" finished-at="2024-08-22T13:41:55 IST" duration-ms="18813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -295,13 +517,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectMobileTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-05T13:11:26 IST" name="closeBrowser" finished-at="2024-08-05T13:11:32 IST" duration-ms="5865" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC005_SearchInput@3e0e1046]" started-at="2024-08-22T13:41:55 IST" name="closeBrowser" finished-at="2024-08-22T13:42:01 IST" duration-ms="5919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC005_SearchInput -->
       <class name="test.TC004_BottomLinks">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:58:01 IST" name="LaunchBrowser" finished-at="2024-08-05T12:58:14 IST" duration-ms="13135" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:29:42 IST" name="LaunchBrowser" finished-at="2024-08-22T13:29:56 IST" duration-ms="13551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,15 +539,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Accessibility()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:58:14 IST" name="Accessibility" finished-at="2024-08-05T12:58:34 IST" duration-ms="19732" status="PASS">
+        <test-method signature="Accessibility()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:29:56 IST" name="Accessibility" finished-at="2024-08-22T13:30:11 IST" duration-ms="15386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Accessibility -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:58:34 IST" name="closeBrowser" finished-at="2024-08-05T12:58:40 IST" duration-ms="5836" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:30:12 IST" name="closeBrowser" finished-at="2024-08-22T13:30:17 IST" duration-ms="5785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:58:40 IST" name="LaunchBrowser" finished-at="2024-08-05T12:58:56 IST" duration-ms="15380" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:30:17 IST" name="LaunchBrowser" finished-at="2024-08-22T13:30:32 IST" duration-ms="15010" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -341,15 +563,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="CaSupplyChain()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:58:56 IST" name="CaSupplyChain" finished-at="2024-08-05T12:59:26 IST" duration-ms="30021" status="PASS">
+        <test-method signature="CaSupplyChain()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:30:32 IST" name="CaSupplyChain" finished-at="2024-08-22T13:30:48 IST" duration-ms="15615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaSupplyChain -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:59:26 IST" name="closeBrowser" finished-at="2024-08-05T12:59:32 IST" duration-ms="5985" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:30:48 IST" name="closeBrowser" finished-at="2024-08-22T13:30:54 IST" duration-ms="5844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:59:32 IST" name="LaunchBrowser" finished-at="2024-08-05T12:59:45 IST" duration-ms="12991" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:30:54 IST" name="LaunchBrowser" finished-at="2024-08-22T13:31:09 IST" duration-ms="15319" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -365,15 +587,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="DoNotSell()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T12:59:45 IST" name="DoNotSell" finished-at="2024-08-05T13:00:00 IST" duration-ms="14904" status="PASS">
+        <test-method signature="DoNotSell()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:31:09 IST" name="DoNotSell" finished-at="2024-08-22T13:31:23 IST" duration-ms="13040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoNotSell -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:00:00 IST" name="closeBrowser" finished-at="2024-08-05T13:00:06 IST" duration-ms="5851" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:31:23 IST" name="closeBrowser" finished-at="2024-08-22T13:31:29 IST" duration-ms="5778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:00:06 IST" name="LaunchBrowser" finished-at="2024-08-05T13:00:20 IST" duration-ms="13914" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:31:29 IST" name="LaunchBrowser" finished-at="2024-08-22T13:31:43 IST" duration-ms="14313" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -389,15 +611,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="HealthDataPrivacy()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:00:20 IST" name="HealthDataPrivacy" finished-at="2024-08-05T13:00:41 IST" duration-ms="21028" status="PASS">
+        <test-method signature="HealthDataPrivacy()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:31:43 IST" name="HealthDataPrivacy" finished-at="2024-08-22T13:31:58 IST" duration-ms="14923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HealthDataPrivacy -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:00:42 IST" name="closeBrowser" finished-at="2024-08-05T13:00:47 IST" duration-ms="5909" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:31:58 IST" name="closeBrowser" finished-at="2024-08-22T13:32:04 IST" duration-ms="5835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:00:47 IST" name="LaunchBrowser" finished-at="2024-08-05T13:01:04 IST" duration-ms="16372" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:32:04 IST" name="LaunchBrowser" finished-at="2024-08-22T13:32:17 IST" duration-ms="12570" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -413,15 +635,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="InterestBasedAds()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:01:04 IST" name="InterestBasedAds" finished-at="2024-08-05T13:01:23 IST" duration-ms="19115" status="PASS">
+        <test-method signature="InterestBasedAds()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:32:17 IST" name="InterestBasedAds" finished-at="2024-08-22T13:32:33 IST" duration-ms="16381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InterestBasedAds -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:01:23 IST" name="closeBrowser" finished-at="2024-08-05T13:01:29 IST" duration-ms="5942" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:32:33 IST" name="closeBrowser" finished-at="2024-08-22T13:32:40 IST" duration-ms="6245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:01:29 IST" name="LaunchBrowser" finished-at="2024-08-05T13:01:42 IST" duration-ms="12658" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:32:40 IST" name="LaunchBrowser" finished-at="2024-08-22T13:32:54 IST" duration-ms="14197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -437,15 +659,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="LimitUse()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:01:42 IST" name="LimitUse" finished-at="2024-08-05T13:02:02 IST" duration-ms="20184" status="PASS">
+        <test-method signature="LimitUse()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:32:54 IST" name="LimitUse" finished-at="2024-08-22T13:33:07 IST" duration-ms="13142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LimitUse -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:02:02 IST" name="closeBrowser" finished-at="2024-08-05T13:02:08 IST" duration-ms="6002" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:33:07 IST" name="closeBrowser" finished-at="2024-08-22T13:33:13 IST" duration-ms="5750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:02:08 IST" name="LaunchBrowser" finished-at="2024-08-05T13:02:22 IST" duration-ms="13843" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:33:13 IST" name="LaunchBrowser" finished-at="2024-08-22T13:33:27 IST" duration-ms="14099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -461,15 +683,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Privacy()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:02:22 IST" name="Privacy" finished-at="2024-08-05T13:02:41 IST" duration-ms="18281" status="PASS">
+        <test-method signature="Privacy()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:33:27 IST" name="Privacy" finished-at="2024-08-22T13:33:42 IST" duration-ms="14929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Privacy -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:02:41 IST" name="closeBrowser" finished-at="2024-08-05T13:02:47 IST" duration-ms="5898" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:33:43 IST" name="closeBrowser" finished-at="2024-08-22T13:33:49 IST" duration-ms="6555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:02:47 IST" name="LaunchBrowser" finished-at="2024-08-05T13:03:03 IST" duration-ms="15502" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:33:49 IST" name="LaunchBrowser" finished-at="2024-08-22T13:34:03 IST" duration-ms="13407" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -485,15 +707,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="StatePrivacyRights()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:03:03 IST" name="StatePrivacyRights" finished-at="2024-08-05T13:03:28 IST" duration-ms="25349" status="PASS">
+        <test-method signature="StatePrivacyRights()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:34:03 IST" name="StatePrivacyRights" finished-at="2024-08-22T13:34:19 IST" duration-ms="16309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StatePrivacyRights -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:03:28 IST" name="closeBrowser" finished-at="2024-08-05T13:03:34 IST" duration-ms="5867" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:34:19 IST" name="closeBrowser" finished-at="2024-08-22T13:34:25 IST" duration-ms="5960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:03:34 IST" name="LaunchBrowser" finished-at="2024-08-05T13:03:49 IST" duration-ms="14734" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:34:25 IST" name="LaunchBrowser" finished-at="2024-08-22T13:34:38 IST" duration-ms="13182" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -509,15 +731,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="TargetAds()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:03:49 IST" name="TargetAds" finished-at="2024-08-05T13:04:08 IST" duration-ms="18747" status="PASS">
+        <test-method signature="TargetAds()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:34:38 IST" name="TargetAds" finished-at="2024-08-22T13:34:52 IST" duration-ms="13295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TargetAds -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:04:08 IST" name="closeBrowser" finished-at="2024-08-05T13:04:14 IST" duration-ms="5908" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:34:52 IST" name="closeBrowser" finished-at="2024-08-22T13:34:58 IST" duration-ms="5831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:04:14 IST" name="LaunchBrowser" finished-at="2024-08-05T13:04:29 IST" duration-ms="14940" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:34:58 IST" name="LaunchBrowser" finished-at="2024-08-22T13:35:13 IST" duration-ms="15383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -533,21 +755,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="TermsAndConditions()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:04:29 IST" name="TermsAndConditions" finished-at="2024-08-05T13:04:49 IST" duration-ms="19797" status="PASS">
+        <test-method signature="TermsAndConditions()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:35:13 IST" name="TermsAndConditions" finished-at="2024-08-22T13:35:28 IST" duration-ms="14907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TermsAndConditions -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-05T13:04:49 IST" name="closeBrowser" finished-at="2024-08-05T13:04:55 IST" duration-ms="5941" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC004_BottomLinks@1b66c0fb]" started-at="2024-08-22T13:35:28 IST" name="closeBrowser" finished-at="2024-08-22T13:35:34 IST" duration-ms="5919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC004_BottomLinks -->
       <class name="test.TC001_Signup">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:44:19 IST" name="setUp" finished-at="2024-08-05T12:44:19 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:17:27 IST" name="setUp" finished-at="2024-08-22T13:17:27 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:44:21 IST" name="LaunchBrowser" finished-at="2024-08-05T12:44:36 IST" duration-ms="15319" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:17:29 IST" name="LaunchBrowser" finished-at="2024-08-22T13:17:46 IST" duration-ms="17096" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -563,7 +785,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:44:36 IST" name="Account" data-provider="Data" finished-at="2024-08-05T12:45:43 IST" duration-ms="67083" status="FAIL">
+        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:17:46 IST" name="Account" data-provider="Data" finished-at="2024-08-22T13:18:48 IST" duration-ms="61435" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -609,7 +831,7 @@
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(@class,'line-clamp')]' (tried for 20 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.CreateAccountPage.validation(CreateAccountPage.java:87)
+at pages.CreateAccountPage.validation(CreateAccountPage.java:89)
 at test.TC001_Signup.Account(TC001_Signup.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -642,14 +864,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@class,'line-clamp')]"}
-  (Session info: chrome=127.0.6533.89)
+  (Session info: chrome=128.0.6613.84)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [deab4623aeac73cd829fa5ebf4424e61, findElement {using=xpath, value=//span[contains(@class,'line-clamp')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54529/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: deab4623aeac73cd829fa5ebf4424e61
+Command: [38f07f43b3ef7855f462ff6eb6629201, findElement {value=//span[contains(@class,'line-clamp')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64926/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38f07f43b3ef7855f462ff6eb6629201
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -678,11 +900,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:45:44 IST" name="closeBrowser" finished-at="2024-08-05T12:45:50 IST" duration-ms="6141" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:18:48 IST" name="closeBrowser" finished-at="2024-08-22T13:18:54 IST" duration-ms="5861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:45:50 IST" name="LaunchBrowser" finished-at="2024-08-05T12:46:02 IST" duration-ms="12350" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:18:54 IST" name="LaunchBrowser" finished-at="2024-08-22T13:19:08 IST" duration-ms="14761" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -698,7 +920,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:46:02 IST" name="Account" data-provider="Data" finished-at="2024-08-05T12:46:25 IST" duration-ms="22445" status="PASS">
+        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:19:08 IST" name="Account" data-provider="Data" finished-at="2024-08-22T13:19:29 IST" duration-ms="20860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -739,11 +961,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:46:25 IST" name="closeBrowser" finished-at="2024-08-05T12:46:31 IST" duration-ms="5923" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:19:30 IST" name="closeBrowser" finished-at="2024-08-22T13:19:36 IST" duration-ms="6051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:46:31 IST" name="LaunchBrowser" finished-at="2024-08-05T12:46:46 IST" duration-ms="15081" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:19:36 IST" name="LaunchBrowser" finished-at="2024-08-22T13:19:48 IST" duration-ms="12879" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -759,7 +981,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:46:46 IST" name="Account" data-provider="Data" finished-at="2024-08-05T12:47:11 IST" duration-ms="25549" status="PASS">
+        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:19:48 IST" name="Account" data-provider="Data" finished-at="2024-08-22T13:20:10 IST" duration-ms="21218" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -800,11 +1022,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:47:12 IST" name="closeBrowser" finished-at="2024-08-05T12:47:18 IST" duration-ms="5828" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:20:10 IST" name="closeBrowser" finished-at="2024-08-22T13:20:16 IST" duration-ms="5939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:47:18 IST" name="LaunchBrowser" finished-at="2024-08-05T12:47:33 IST" duration-ms="15731" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:20:16 IST" name="LaunchBrowser" finished-at="2024-08-22T13:20:30 IST" duration-ms="14357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -820,7 +1042,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:47:33 IST" name="Account" data-provider="Data" finished-at="2024-08-05T12:47:55 IST" duration-ms="21539" status="PASS">
+        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:20:30 IST" name="Account" data-provider="Data" finished-at="2024-08-22T13:20:51 IST" duration-ms="20326" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -861,11 +1083,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:47:55 IST" name="closeBrowser" finished-at="2024-08-05T12:48:01 IST" duration-ms="6021" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:20:51 IST" name="closeBrowser" finished-at="2024-08-22T13:20:57 IST" duration-ms="5876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:48:01 IST" name="LaunchBrowser" finished-at="2024-08-05T12:48:14 IST" duration-ms="12944" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:20:57 IST" name="LaunchBrowser" finished-at="2024-08-22T13:21:12 IST" duration-ms="15606" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -881,7 +1103,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:48:14 IST" name="Account" data-provider="Data" finished-at="2024-08-05T12:48:39 IST" duration-ms="25275" status="PASS">
+        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:21:12 IST" name="Account" data-provider="Data" finished-at="2024-08-22T13:21:32 IST" duration-ms="20139" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -922,11 +1144,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:48:40 IST" name="closeBrowser" finished-at="2024-08-05T12:48:46 IST" duration-ms="5873" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:21:33 IST" name="closeBrowser" finished-at="2024-08-22T13:21:39 IST" duration-ms="5863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:48:46 IST" name="LaunchBrowser" finished-at="2024-08-05T12:48:59 IST" duration-ms="13360" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:21:39 IST" name="LaunchBrowser" finished-at="2024-08-22T13:21:54 IST" duration-ms="15397" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -942,7 +1164,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:48:59 IST" name="Account" data-provider="Data" finished-at="2024-08-05T12:49:23 IST" duration-ms="24240" status="PASS">
+        <test-method signature="Account(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:21:54 IST" name="Account" data-provider="Data" finished-at="2024-08-22T13:22:16 IST" duration-ms="21928" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -983,13 +1205,13 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-05T12:49:23 IST" name="closeBrowser" finished-at="2024-08-05T12:49:29 IST" duration-ms="5886" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC001_Signup@5dafbe45]" started-at="2024-08-22T13:22:16 IST" name="closeBrowser" finished-at="2024-08-22T13:22:22 IST" duration-ms="5851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC001_Signup -->
       <class name="test.TC007_ShopByBrands">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC007_ShopByBrands@7dc19a70]" started-at="2024-08-05T13:12:37 IST" name="LaunchBrowser" finished-at="2024-08-05T13:12:51 IST" duration-ms="13933" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC007_ShopByBrands@7dc19a70]" started-at="2024-08-22T13:43:05 IST" name="LaunchBrowser" finished-at="2024-08-22T13:43:21 IST" duration-ms="15405" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1005,95 +1227,21 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="ShopByBrandsTest()[pri:0, instance:test.TC007_ShopByBrands@7dc19a70]" started-at="2024-08-05T13:12:51 IST" name="ShopByBrandsTest" finished-at="2024-08-05T13:13:53 IST" duration-ms="61729" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Go to Cart']"}
-  (Session info: chrome=127.0.6533.89)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [68820ee27fdf05cb7a613023d4cf56e2, findElement {using=xpath, value=//a[text()='Go to Cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58717}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58717/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68820ee27fdf05cb7a613023d4cf56e2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Go to Cart']"}
-  (Session info: chrome=127.0.6533.89)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [68820ee27fdf05cb7a613023d4cf56e2, findElement {using=xpath, value=//a[text()='Go to Cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58717}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58717/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68820ee27fdf05cb7a613023d4cf56e2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at pages.SonyPage.clickGoToCart(SonyPage.java:55)
-at test.TC007_ShopByBrands.ShopByBrandsTest(TC007_ShopByBrands.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="ShopByBrandsTest()[pri:0, instance:test.TC007_ShopByBrands@7dc19a70]" started-at="2024-08-22T13:43:21 IST" name="ShopByBrandsTest" finished-at="2024-08-22T13:44:06 IST" duration-ms="44834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShopByBrandsTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC007_ShopByBrands@7dc19a70]" started-at="2024-08-05T13:13:53 IST" name="closeBrowser" finished-at="2024-08-05T13:13:59 IST" duration-ms="6097" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC007_ShopByBrands@7dc19a70]" started-at="2024-08-22T13:44:06 IST" name="closeBrowser" finished-at="2024-08-22T13:44:12 IST" duration-ms="6243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC007_ShopByBrands -->
       <class name="test.TC008_CheckOut">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T12:44:19 IST" name="setUp" finished-at="2024-08-05T12:44:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:17:27 IST" name="setUp" finished-at="2024-08-22T13:17:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:13:59 IST" name="LaunchBrowser" finished-at="2024-08-05T13:14:14 IST" duration-ms="14824" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:44:12 IST" name="LaunchBrowser" finished-at="2024-08-22T13:44:27 IST" duration-ms="14519" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1109,7 +1257,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:14:14 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-05T13:15:41 IST" duration-ms="87112" status="PASS">
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:44:27 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-22T13:45:41 IST" duration-ms="74061" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1180,11 +1328,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOutTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:15:42 IST" name="closeBrowser" finished-at="2024-08-05T13:15:48 IST" duration-ms="6131" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:45:41 IST" name="closeBrowser" finished-at="2024-08-22T13:45:48 IST" duration-ms="6284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:15:48 IST" name="LaunchBrowser" finished-at="2024-08-05T13:16:02 IST" duration-ms="14338" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:45:48 IST" name="LaunchBrowser" finished-at="2024-08-22T13:46:04 IST" duration-ms="16737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1200,7 +1348,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:16:02 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-05T13:16:14 IST" duration-ms="11845" status="FAIL">
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:46:04 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-22T13:47:15 IST" duration-ms="70264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1268,87 +1416,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <nav aria-label="Main" class="hamburger-menu">...</nav> is not clickable at point (199, 77). Other element would receive the click: <div id="confirmIt-backdrop" class="confirmIt modal-backdrop in"></div>
-  (Session info: chrome=127.0.6533.89)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ca6409dc6b71ad55036cf73c8eabaf2, clickElement {id=f.677E8206E25CB5B0E7C34AE464F8AAFB.d.173053A2A660746BAFB2AD17C5535EB5.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59111/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6ca6409dc6b71ad55036cf73c8eabaf2)] -> xpath: //nav[@class='hamburger-menu']]
-Session ID: 6ca6409dc6b71ad55036cf73c8eabaf2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <nav aria-label="Main" class="hamburger-menu">...</nav> is not clickable at point (199, 77). Other element would receive the click: <div id="confirmIt-backdrop" class="confirmIt modal-backdrop in"></div>
-  (Session info: chrome=127.0.6533.89)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6ca6409dc6b71ad55036cf73c8eabaf2, clickElement {id=f.677E8206E25CB5B0E7C34AE464F8AAFB.d.173053A2A660746BAFB2AD17C5535EB5.e.83}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59111/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6ca6409dc6b71ad55036cf73c8eabaf2)] -> xpath: //nav[@class='hamburger-menu']]
-Session ID: 6ca6409dc6b71ad55036cf73c8eabaf2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at pages.HomePage.clickBrands(HomePage.java:300)
-at test.TC008_CheckOut.CheckOutTest(TC008_CheckOut.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOutTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:16:15 IST" name="closeBrowser" finished-at="2024-08-05T13:16:22 IST" duration-ms="6880" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:47:15 IST" name="closeBrowser" finished-at="2024-08-22T13:47:21 IST" duration-ms="6313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:16:22 IST" name="LaunchBrowser" finished-at="2024-08-05T13:16:35 IST" duration-ms="13539" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:47:21 IST" name="LaunchBrowser" finished-at="2024-08-22T13:47:34 IST" duration-ms="13311" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1364,7 +1439,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:16:35 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-05T13:17:49 IST" duration-ms="74064" status="PASS">
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:47:34 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-22T13:48:41 IST" duration-ms="66632" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1435,11 +1510,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOutTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:17:50 IST" name="closeBrowser" finished-at="2024-08-05T13:17:56 IST" duration-ms="6329" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:48:41 IST" name="closeBrowser" finished-at="2024-08-22T13:48:48 IST" duration-ms="6320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:17:56 IST" name="LaunchBrowser" finished-at="2024-08-05T13:18:09 IST" duration-ms="12459" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:48:48 IST" name="LaunchBrowser" finished-at="2024-08-22T13:49:03 IST" duration-ms="15604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1455,7 +1530,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:18:09 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-05T13:19:34 IST" duration-ms="85760" status="PASS">
+        <test-method signature="CheckOutTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:49:03 IST" name="CheckOutTest" data-provider="Data" finished-at="2024-08-22T13:50:18 IST" duration-ms="74315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1526,17 +1601,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckOutTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-05T13:19:35 IST" name="closeBrowser" finished-at="2024-08-05T13:19:41 IST" duration-ms="6372" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC008_CheckOut@508dec2b]" started-at="2024-08-22T13:50:18 IST" name="closeBrowser" finished-at="2024-08-22T13:50:24 IST" duration-ms="6311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC008_CheckOut -->
       <class name="test.TC002_Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:44:19 IST" name="setUp" finished-at="2024-08-05T12:44:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:17:27 IST" name="setUp" finished-at="2024-08-22T13:17:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:49:30 IST" name="LaunchBrowser" finished-at="2024-08-05T12:49:45 IST" duration-ms="15766" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:22:22 IST" name="LaunchBrowser" finished-at="2024-08-22T13:22:36 IST" duration-ms="13707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1552,7 +1627,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:49:45 IST" name="Login" data-provider="Data" finished-at="2024-08-05T12:50:12 IST" duration-ms="26159" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:22:36 IST" name="Login" data-provider="Data" finished-at="2024-08-22T13:22:59 IST" duration-ms="23371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1578,11 +1653,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:50:12 IST" name="closeBrowser" finished-at="2024-08-05T12:50:18 IST" duration-ms="5883" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:22:59 IST" name="closeBrowser" finished-at="2024-08-22T13:23:05 IST" duration-ms="5842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:50:18 IST" name="LaunchBrowser" finished-at="2024-08-05T12:50:31 IST" duration-ms="12803" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:23:05 IST" name="LaunchBrowser" finished-at="2024-08-22T13:23:19 IST" duration-ms="13380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1598,7 +1673,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:50:31 IST" name="Login" data-provider="Data" finished-at="2024-08-05T12:50:57 IST" duration-ms="26542" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:23:19 IST" name="Login" data-provider="Data" finished-at="2024-08-22T13:23:41 IST" duration-ms="22795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1624,11 +1699,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:50:57 IST" name="closeBrowser" finished-at="2024-08-05T12:51:03 IST" duration-ms="5915" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:23:42 IST" name="closeBrowser" finished-at="2024-08-22T13:23:48 IST" duration-ms="5850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:51:03 IST" name="LaunchBrowser" finished-at="2024-08-05T12:51:16 IST" duration-ms="12787" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:23:48 IST" name="LaunchBrowser" finished-at="2024-08-22T13:24:01 IST" duration-ms="13943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1644,7 +1719,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:51:16 IST" name="Login" data-provider="Data" finished-at="2024-08-05T12:51:42 IST" duration-ms="25493" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:24:01 IST" name="Login" data-provider="Data" finished-at="2024-08-22T13:24:24 IST" duration-ms="22941" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1670,11 +1745,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:51:42 IST" name="closeBrowser" finished-at="2024-08-05T12:51:48 IST" duration-ms="5922" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:24:25 IST" name="closeBrowser" finished-at="2024-08-22T13:24:30 IST" duration-ms="5853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:51:48 IST" name="LaunchBrowser" finished-at="2024-08-05T12:52:04 IST" duration-ms="15747" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:24:30 IST" name="LaunchBrowser" finished-at="2024-08-22T13:24:46 IST" duration-ms="15727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1690,7 +1765,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:52:04 IST" name="Login" data-provider="Data" finished-at="2024-08-05T12:52:31 IST" duration-ms="27582" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:24:46 IST" name="Login" data-provider="Data" finished-at="2024-08-22T13:25:12 IST" duration-ms="25978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1716,13 +1791,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-05T12:52:31 IST" name="closeBrowser" finished-at="2024-08-05T12:52:37 IST" duration-ms="5863" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC002_Login@38145825]" started-at="2024-08-22T13:25:12 IST" name="closeBrowser" finished-at="2024-08-22T13:25:18 IST" duration-ms="5847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC002_Login -->
       <class name="test.TC006_ShopByDepartment">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC006_ShopByDepartment@24c1b2d2]" started-at="2024-08-05T13:11:32 IST" name="LaunchBrowser" finished-at="2024-08-05T13:11:46 IST" duration-ms="13887" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC006_ShopByDepartment@24c1b2d2]" started-at="2024-08-22T13:42:01 IST" name="LaunchBrowser" finished-at="2024-08-22T13:42:16 IST" duration-ms="15255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1738,29 +1813,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="ShopByDepttest()[pri:0, instance:test.TC006_ShopByDepartment@24c1b2d2]" started-at="2024-08-05T13:11:46 IST" name="ShopByDepttest" finished-at="2024-08-05T13:12:31 IST" duration-ms="44744" status="FAIL">
+        <test-method signature="ShopByDepttest()[pri:0, instance:test.TC006_ShopByDepartment@24c1b2d2]" started-at="2024-08-22T13:42:16 IST" name="ShopByDepttest" finished-at="2024-08-22T13:42:59 IST" duration-ms="42758" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Bella Pro Series - Precision Max Performance Blender - Black'])[1]"}
-  (Session info: chrome=127.0.6533.89)
+  (Session info: chrome=128.0.6613.84)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [19003e09f5fb13921b11ac54ceb56b16, findElement {using=xpath, value=(//a[text()='Bella Pro Series - Precision Max Performance Blender - Black'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58529/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 19003e09f5fb13921b11ac54ceb56b16]]>
+Command: [56f122e436a2e4457b597668fc624f91, findElement {value=(//a[text()='Bella Pro Series - Precision Max Performance Blender - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52639/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56f122e436a2e4457b597668fc624f91]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Bella Pro Series - Precision Max Performance Blender - Black'])[1]"}
-  (Session info: chrome=127.0.6533.89)
+  (Session info: chrome=128.0.6613.84)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [19003e09f5fb13921b11ac54ceb56b16, findElement {using=xpath, value=(//a[text()='Bella Pro Series - Precision Max Performance Blender - Black'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58529/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 19003e09f5fb13921b11ac54ceb56b16
+Command: [56f122e436a2e4457b597668fc624f91, findElement {value=(//a[text()='Bella Pro Series - Precision Max Performance Blender - Black'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52639}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52639/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56f122e436a2e4457b597668fc624f91
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -1778,7 +1853,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at pages.BlenderPage.selectBlender(BlenderPage.java:29)
+at pages.BlenderPage.selectBlender(BlenderPage.java:32)
 at test.TC006_ShopByDepartment.ShopByDepttest(TC006_ShopByDepartment.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -1816,13 +1891,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShopByDepttest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC006_ShopByDepartment@24c1b2d2]" started-at="2024-08-05T13:12:31 IST" name="closeBrowser" finished-at="2024-08-05T13:12:37 IST" duration-ms="5970" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC006_ShopByDepartment@24c1b2d2]" started-at="2024-08-22T13:42:59 IST" name="closeBrowser" finished-at="2024-08-22T13:43:05 IST" duration-ms="6062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.TC006_ShopByDepartment -->
       <class name="test.TC003_AllMenu">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:52:37 IST" name="LaunchBrowser" finished-at="2024-08-05T12:52:52 IST" duration-ms="14856" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:25:18 IST" name="LaunchBrowser" finished-at="2024-08-22T13:25:36 IST" duration-ms="17502" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1838,15 +1913,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="BBMembershipsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:52:52 IST" name="BBMembershipsValidation" finished-at="2024-08-05T12:53:20 IST" duration-ms="27866" status="PASS">
+        <test-method signature="BBMembershipsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:25:36 IST" name="BBMembershipsValidation" finished-at="2024-08-22T13:25:52 IST" duration-ms="15985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BBMembershipsValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:53:20 IST" name="closeBrowser" finished-at="2024-08-05T12:53:26 IST" duration-ms="5956" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:25:52 IST" name="closeBrowser" finished-at="2024-08-22T13:25:58 IST" duration-ms="5911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:53:26 IST" name="LaunchBrowser" finished-at="2024-08-05T12:53:40 IST" duration-ms="13613" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:25:58 IST" name="LaunchBrowser" finished-at="2024-08-22T13:26:13 IST" duration-ms="15345" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1862,15 +1937,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="BBSellsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:53:40 IST" name="BBSellsValidation" finished-at="2024-08-05T12:54:04 IST" duration-ms="24028" status="PASS">
+        <test-method signature="BBSellsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:26:13 IST" name="BBSellsValidation" finished-at="2024-08-22T13:26:29 IST" duration-ms="16149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BBSellsValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:54:05 IST" name="closeBrowser" finished-at="2024-08-05T12:54:11 IST" duration-ms="5961" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:26:30 IST" name="closeBrowser" finished-at="2024-08-22T13:26:36 IST" duration-ms="6072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:54:11 IST" name="LaunchBrowser" finished-at="2024-08-05T12:54:26 IST" duration-ms="15421" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:26:36 IST" name="LaunchBrowser" finished-at="2024-08-22T13:26:51 IST" duration-ms="14699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1886,15 +1961,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="BackToSchoolValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:54:26 IST" name="BackToSchoolValidation" finished-at="2024-08-05T12:54:53 IST" duration-ms="26655" status="PASS">
+        <test-method signature="BackToSchoolValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:26:51 IST" name="BackToSchoolValidation" finished-at="2024-08-22T13:27:07 IST" duration-ms="16477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BackToSchoolValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:54:54 IST" name="closeBrowser" finished-at="2024-08-05T12:55:00 IST" duration-ms="6055" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:27:08 IST" name="closeBrowser" finished-at="2024-08-22T13:27:14 IST" duration-ms="5863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:55:00 IST" name="LaunchBrowser" finished-at="2024-08-05T12:55:15 IST" duration-ms="14894" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:27:14 IST" name="LaunchBrowser" finished-at="2024-08-22T13:27:28 IST" duration-ms="14212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1910,15 +1985,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="CreditCardsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:55:15 IST" name="CreditCardsValidation" finished-at="2024-08-05T12:55:42 IST" duration-ms="27544" status="PASS">
+        <test-method signature="CreditCardsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:27:28 IST" name="CreditCardsValidation" finished-at="2024-08-22T13:27:44 IST" duration-ms="15766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditCardsValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:55:43 IST" name="closeBrowser" finished-at="2024-08-05T12:55:48 IST" duration-ms="5974" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:27:44 IST" name="closeBrowser" finished-at="2024-08-22T13:27:50 IST" duration-ms="5880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:55:48 IST" name="LaunchBrowser" finished-at="2024-08-05T12:56:05 IST" duration-ms="16517" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:27:50 IST" name="LaunchBrowser" finished-at="2024-08-22T13:28:05 IST" duration-ms="14643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1934,15 +2009,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="DealsOfTheDayValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:56:05 IST" name="DealsOfTheDayValidation" finished-at="2024-08-05T12:56:28 IST" duration-ms="22894" status="PASS">
+        <test-method signature="DealsOfTheDayValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:28:05 IST" name="DealsOfTheDayValidation" finished-at="2024-08-22T13:28:22 IST" duration-ms="16850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DealsOfTheDayValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:56:29 IST" name="closeBrowser" finished-at="2024-08-05T12:56:35 IST" duration-ms="5926" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:28:22 IST" name="closeBrowser" finished-at="2024-08-22T13:28:28 IST" duration-ms="6016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:56:35 IST" name="LaunchBrowser" finished-at="2024-08-05T12:56:48 IST" duration-ms="13619" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:28:28 IST" name="LaunchBrowser" finished-at="2024-08-22T13:28:43 IST" duration-ms="14699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1958,15 +2033,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="MoreOptionsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:56:48 IST" name="MoreOptionsValidation" finished-at="2024-08-05T12:57:14 IST" duration-ms="26064" status="PASS">
+        <test-method signature="MoreOptionsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:28:43 IST" name="MoreOptionsValidation" finished-at="2024-08-22T13:29:00 IST" duration-ms="16985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MoreOptionsValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:57:15 IST" name="closeBrowser" finished-at="2024-08-05T12:57:21 IST" duration-ms="5954" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:29:00 IST" name="closeBrowser" finished-at="2024-08-22T13:29:06 IST" duration-ms="5936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:57:21 IST" name="LaunchBrowser" finished-at="2024-08-05T12:57:37 IST" duration-ms="15684" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:29:06 IST" name="LaunchBrowser" finished-at="2024-08-22T13:29:20 IST" duration-ms="13989" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1982,11 +2057,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="TopDealsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:57:37 IST" name="TopDealsValidation" finished-at="2024-08-05T12:57:54 IST" duration-ms="17791" status="PASS">
+        <test-method signature="TopDealsValidation()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:29:20 IST" name="TopDealsValidation" finished-at="2024-08-22T13:29:36 IST" duration-ms="15379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TopDealsValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-05T12:57:55 IST" name="closeBrowser" finished-at="2024-08-05T12:58:01 IST" duration-ms="6037" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC003_AllMenu@41330d4f]" started-at="2024-08-22T13:29:36 IST" name="closeBrowser" finished-at="2024-08-22T13:29:42 IST" duration-ms="5898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
